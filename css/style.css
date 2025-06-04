@@ -65,8 +65,9 @@ select {
     color: red; /* Цвет для обязательных полей */
 }
 
-.checkbox-container {
+.checkbox-container label {
     margin: 10px 0; /* Отступы для контейнера чекбокса */
+    display: inline-block;
 }
 
 .submit-button {
