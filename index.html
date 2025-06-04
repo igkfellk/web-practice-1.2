@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма оформления заказа</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="responsive-image" src="https://clck.ru/3MSFdm" alt="Логотип компании" class="logo">
+            <h1>Оформление заказа</h1>
+            <hr class="divider">
+        </header>
+
+        <form action="#" method="POST" class="order-form">
+            <!-- Данные покупателя -->
+            <section class="customer-data">
+                <h2>Данные покупателя</h2>
+                <label for="name">Имя <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone">
+            </section>
+            <hr class="divider">
+
+            <!-- Информация о заказе -->
+            <section class="order-info">
+                <h2>Информация о заказе</h2>
+                <label for="product">Выберите товар:</label>
+                <select id="product" name="product">
+                    <option value="tshirt">Футболка</option>
+                    <option value="mug">Кружка</option>
+                    <option value="notebook">Блокнот</option>
+                </select>
+
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Я согласен на обработку данных <span class="required">*</span></label>
+                </div>
+            </section>
+            <hr class="divider">
+
+            <button type="submit" class="submit-button">Оформить заказ</button>
+        </form>
+    </div>
+</body>
+</html>
